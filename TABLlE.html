@@ -2,15 +2,30 @@
     <head>table
     <title></title>
     <style>
-        th,td{border: 7px rgb(19, 11, 11);
-        }
+        th,td{
+    border: 1px solid blue;
+}
+th,td{border-collapse: collapse;
+
+}
+th,td{border: 3px;
+border-radius: 5px;
+}
+th,td{ border-style: groove;}
+th,td{border-color: black;}
+th,td{padding: 10px;}
+table{border-spacing: 10px;}
     </style>
 </head>
 <body>
     <h2>Table</h2>
-    <table>
+    <colgroup>
+    <col span="3" style="border-style: dotted;background-color:blockquote">
+    <col style="background-color: aqua">
+    </colgroup>
+    <table style="width:30%">
 <tr>
-    <th>S No</th>
+    <th style="width:3px">S No</th>
     <th>Name</th>
     <th>Department</th>
     <th>CGPA</th>
@@ -28,7 +43,7 @@
     <td>02</td>
     <td>Naila</td>
     <td>BSCS</td>
-    <td>3.60</td>
+    <td>3.69</td>
     <td>03415088246</td>
 
 </tr>
@@ -41,14 +56,61 @@
 
 </tr>
 <tr>
-    <td>03</td>
-    <td>Ateel</td>
-    <td>CS</td>
+
+    <td colspan="3">Ateel</td>
+
     <td>3.69</td>
     <td>03415088246</td>
 
 </tr>
 
+    </table style="background-color":pink>
+    <h2><mark>TABLE2</mark></h2>
+    <table>
+<tr>
+    <th>S No</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>CGPA</th>
+    
+</tr>
+<tr>
+    <td>01</td>
+    <td>Nadia</td>
+    <td rowspan="2" style="background-color: blanchedalmond">CS</td>
+    <td>3.69</td>
+    
+
+</tr>
+<tr>
+    <td>02</td>
+    <td>Naila</td>
+    <td>3.60</td>
+    
+
+</tr>
+<tr>
+    <td>03</td>
+    <td>Ateel</td>
+    <td>BSCS</td>
+    <td>3.69</td>
+    
+
+</tr>
+
     </table>
+    <ul>
+        <li>tv</li>
+        <li>dvd</li>
+        <li>usp</li>
+        <li>tv</li>
+    </ul>
+    <br>
+    <ol>
+        <li>tv</li>
+        <li>dvd</li>
+        <li>usp</li>
+        <li>tv</li>
+    </ol>
 </body>
 </html>

@@ -8,6 +8,15 @@
 th,td{border-collapse: collapse;
 
 }
+td{
+    border-radius: 10px;
+    text-align: center;
+}
+th{
+    border-style: dotted;
+    background-color: beige;
+}
+th,td{background-color: antiquewhite;}
 th,td{border: 3px;
 border-radius: 5px;
 }
@@ -15,12 +24,16 @@ th,td{ border-style: groove;}
 th,td{border-color: black;}
 th,td{padding: 10px;}
 table{border-spacing: 10px;}
+tr:nth-child(even){background-color:forestgreen;}
+td:nth-child(odd),th:nth-child(odd){background-color: salmon;
+}
+tr:hover{background-color: blanchedalmond;}
     </style>
 </head>
 <body>
     <h2>Table</h2>
     <colgroup>
-    <col span="3" style="border-style: dotted;background-color:blockquote">
+    <col span="2" style="border-style: dotted;background-color:blockquote">
     <col style="background-color: aqua">
     </colgroup>
     <table style="width:30%">
@@ -99,18 +112,26 @@ table{border-spacing: 10px;}
 </tr>
 
     </table>
-    <ul>
+    <ul style="list-style:square;">
         <li>tv</li>
         <li>dvd</li>
         <li>usp</li>
-        <li>tv</li>
+        <li>frig</li>
     </ul>
     <br>
-    <ol>
+    <ol type="i">
         <li>tv</li>
         <li>dvd</li>
-        <li>usp</li>
+        <li>pet</li>
         <li>tv</li>
     </ol>
+    <dl>
+        <dt><b>fruits<b></dt>
+            
+        <dd>apple</dd>
+        <dd>banana</dd>
+        <dd>orange</dd>
+        <dd>mango</dd>
+    </dl>
 </body>
 </html>
